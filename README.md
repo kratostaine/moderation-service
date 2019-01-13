@@ -14,4 +14,4 @@ It is an API written in **Go**.
 - Add a database to store data for objectionable content.
 - Add endpoints to get, create, update and delete objectionable data set so that the same can be updated dynamically.
 - Add tests
-- Add swagger integration
+- Refactor swagger integration

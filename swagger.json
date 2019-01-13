@@ -1,0 +1,32 @@
+{
+  "swagger": "2.0",
+  "paths": {
+    "/health": {
+      "get": {
+        "description": "Gets the health of the service",
+        "operationId": "getHealth",
+        "responses": {
+          "200": {
+            "$ref": "#/responses/healthy"
+          }
+        }
+      }
+    },
+    "/validation/{text}": {
+      "get": {
+        "description": "Validates if the text provided is objectionable or not",
+        "operationId": "validateText",
+        "responses": {
+          "200": {
+            "description": "doesn't contain objectionable data",
+            "$ref": "#/responses/text"
+          },
+          "400": {
+            "description": "contains objectionable data",
+            "$ref": "#/responses/text"
+          }
+        }
+      }
+    }
+  }
+}
