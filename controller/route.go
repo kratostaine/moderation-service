@@ -26,10 +26,10 @@ var routes = Routes{
 		controller.GetHealth,
 	},
 	Route{
-		"Get data from repo",
+		"Validate text",
 		http.MethodGet,
-		"/data",
-		controller.GetData,
+		"/validation/{text}",
+		controller.ValidateText,
 	},
 }
 

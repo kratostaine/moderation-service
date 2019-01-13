@@ -2,6 +2,14 @@ package repository
 
 type Repository struct{}
 
-func (r Repository) GetData() string {
-	return "Data from Repository"
+var objectionableData map[string][]string = map[string][]string{
+	"poop":   {},
+	"murder": {},
+	"shit":   []string{"dikshit"},
+	"nazi":   {},
+	"kill":   []string{"overkill"},
+}
+
+func (r Repository) GetObjectionableData() map[string][]string {
+	return objectionableData
 }
