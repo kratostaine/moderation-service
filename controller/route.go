@@ -33,7 +33,7 @@ var routes = Routes{
 	},
 }
 
-func NewRouter() *mux.Router {
+func Router() *mux.Router {
 	router := mux.NewRouter().StrictSlash(true)
 	log.Println("Registered routes:")
 	for _, route := range routes {
