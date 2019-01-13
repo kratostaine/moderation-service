@@ -21,9 +21,15 @@ var controller = &Controller{}
 var routes = Routes{
 	Route{
 		"Health",
-		"GET",
+		http.MethodGet,
 		"/health",
-		controller.getHealth,
+		controller.GetHealth,
+	},
+	Route{
+		"Get data from repo",
+		http.MethodGet,
+		"/data",
+		controller.GetData,
 	},
 }
 
