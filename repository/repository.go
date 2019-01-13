@@ -13,3 +13,7 @@ var objectionableData map[string][]string = map[string][]string{
 func (r Repository) GetObjectionableData() map[string][]string {
 	return objectionableData
 }
+
+func (r Repository) GetMaxLengthOfObjectionableText() int {
+	return 6 //TODO: To be modified to dynamically obtain the value
+}
