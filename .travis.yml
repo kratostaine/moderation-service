@@ -4,6 +4,8 @@ go:
   - "1.11.x"
   - master
 
+install: true
+
 script:
-  - go get -t -v -u github.com/gorilla/mux
-  - go test -v -race ./...
+  - go get -v -u github.com/gorilla/mux
+  - go test -v
