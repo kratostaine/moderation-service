@@ -6,5 +6,6 @@ go:
 install: true
 
 script:
-  - go get -t -v ./...
+  - go get -u github.com/gorilla/mux
+  - go get -v -u github.com/kratostaine/moderation-service
   - go test -v -race ./...
