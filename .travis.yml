@@ -6,5 +6,6 @@ go:
 install: true
 
 script:
+  - unset GOROOT
   - go get -t -v ./...
   - go test -v -race ./...
