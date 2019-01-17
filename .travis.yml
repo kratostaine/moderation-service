@@ -8,4 +8,7 @@ install: true
 
 script:
   - go get -v -u github.com/gorilla/mux
+  - go get -v -u github.com/kratostaine/moderation-service/controller
+  - go get -v -u github.com/kratostaine/moderation-service/repository
+  - go get -v -u github.com/kratostaine/moderation-service/service
   - go test -v -race ./...
