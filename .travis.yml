@@ -5,5 +5,5 @@ go:
   - master
 
 script:
-  - go get -t -v ./...
+  - go get -t -v -u github.com/gorilla/mux
   - go test -v -race ./...
