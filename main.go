@@ -2,10 +2,10 @@ package main
 
 import (
 	"log"
-	"moderation-service/controller"
 	"net/http"
 
 	"github.com/gorilla/mux"
+	"github.com/kratostaine/moderation-service/controller"
 )
 
 type App struct {

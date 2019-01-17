@@ -2,11 +2,11 @@ package controller
 
 import (
 	"encoding/json"
-	. "moderation-service/service"
 	"net/http"
 	"strings"
 
 	"github.com/gorilla/mux"
+	. "github.com/kratostaine/moderation-service/service"
 )
 
 type Controller struct {

@@ -3,8 +3,9 @@ package service
 import (
 	"errors"
 	"log"
-	. "moderation-service/repository"
 	"strings"
+
+	. "github.com/kratostaine/moderation-service/repository"
 )
 
 type Service struct {
