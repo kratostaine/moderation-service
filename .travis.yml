@@ -6,7 +6,7 @@ go:
 install: true
 
 script:
-  - unset GOROOT
-  - go env
+  - export GOPATH=${TRAVIS_HOME}/gopath/src/github.com/kratostaine
+  - export PATH=${TRAVIS_HOME}/gopath/bin:$PATH
   - go get -t -v ./...
   - go test -v -race ./...
