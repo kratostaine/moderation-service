@@ -1,10 +1,11 @@
 package main
 
 import (
-	"moderation-service/controller"
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/kratostaine/moderation-service/controller"
 )
 
 var a App
