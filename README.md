@@ -1,5 +1,7 @@
 # Moderation Service
 
+[![Build Status](https://travis-ci.org/kratostaine/moderation-service.svg?branch=master)](https://travis-ci.org/kratostaine/moderation-service)
+
 Moderation service is a REST API which provides the functionality of moderating any text to find out
 if it contains any objectionable content or not.
 
